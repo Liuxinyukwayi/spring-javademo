@@ -12,7 +12,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'git@github.com:Liuxinyukwayi/spring-javademo.git'
+                git branch: 'main', url: 'http://114.55.230.186/root/spring-javademo.git'
             }
         }
 
