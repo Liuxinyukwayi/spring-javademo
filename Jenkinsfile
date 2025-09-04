@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'maven:3.8.8-openjdk-17'
+            image 'crpi-29ns4nxq5xxuk3v4.cn-hangzhou.personal.cr.aliyuncs.com/wenhegantian/maven:lts'
             args '-v $HOME/.m2:/root/.m2'
         }
     }
