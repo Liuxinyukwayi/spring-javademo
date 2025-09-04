@@ -1,5 +1,10 @@
 pipeline {
-    agent any
+    agent {
+        docker {
+            image 'maven:3.8.8-openjdk-17'
+            args '-v $HOME/.m2:/root/.m2'
+        }
+    }
 
     environment {
         REGISTRY = "crpi-29ns4nxq5xxuk3v4.cn-hangzhou.personal.cr.aliyuncs.com" // 阿里云容器镜像服务地址
